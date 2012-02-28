@@ -1,0 +1,20 @@
+<!-- /************************************`
+ * sub2_ant_first.java				*
+ * Author: Iwabuchi Ken				*
+ * Date: 20120131_073542			*
+ * Aim:								*
+ * 	1.
+ * <Usage>
+ *	1. Run the program; A message shown
+ * <Source>
+ * 	1. http://www.techscore.com/tech/Java/ApacheJakarta/Ant/2/
+ *									*
+ ************************************/
+ -->
+<project name="sample" default="showOS" basedir=".">
+
+  <target name="showOS">
+    <echo message="OS = ${os.name}"/>
+  </target>
+
+</project>

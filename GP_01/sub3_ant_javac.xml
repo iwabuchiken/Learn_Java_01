@@ -1,0 +1,27 @@
+<!-- /************************************`
+ * sub3_ant_javac.xml				*
+ * Author: Iwabuchi Ken				*
+ * Date: 20120131_073542			*
+ * Aim:								*
+ * 	1.
+ * <Usage>
+ *	1. Run the program; File gets javac-ed
+ * <Source>
+ * 	1. http://www.javaroad.jp/opensource/js_ant2.htm
+ 	2. "includeAntRuntime" => http://husky.mydns.jp/huskysmemo/2010/02/antjavac.html
+ *									*
+ ************************************/
+ -->
+<project name="sample" default="compile" basedir=".">
+	<target name="compile">
+	<!--
+		1. The attribute "includeAntRuntime" needed,
+			with the value set to "true"
+	-->
+	  <javac srcdir="."
+	         destdir="."
+	  		 includeAntRuntime="true"
+	         includes="sub1_variable_type.java" />
+
+	</target>
+</project>
