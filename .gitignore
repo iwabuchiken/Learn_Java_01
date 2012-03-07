@@ -1,1 +1,4 @@
 bin/*
+src/mylib/*.class
+src/gp_07_IO/*.class
+

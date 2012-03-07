@@ -10,6 +10,7 @@
 package mylib;
 
 import java.io.File;
+import java.io.IOException;
 
 public class STDLIB {
 	/*
@@ -28,14 +29,21 @@ public class STDLIB {
 		/* variable				*/
 //		String			file_name	= get_file_name();
 		
-		/* get the path				*/
-		return new File(file_name).getAbsolutePath();
+//		return new File(file_name).getParentFile().getAbsolutePath();
+		File			f1		= new File(file_name);
+		String		s1		= f1.getAbsolutePath();
+		File			f2		= new File(s1);
+		String		s2		= f2.getParent();
+		
+		return s2;
+//		return s1;
+//			return new File(new File(file_name).getAbsolutePath());
 	}//public static String get_file_absolute_path(String file_name)
 	/*
 	 * 
 	 */
 	public static String get_project_path
-		(String root_name, String target_name) {
+		(String root_name, String target_name, String package_name) {
 		/* prosecces
 		 * 1. get a File object (f1)
 		 * 2. Check if the file exists (if doesn't => return null)
@@ -47,27 +55,25 @@ public class STDLIB {
 		 * 8. return s1
 		 */
 		/* 1			*/
-//		File			f1		= new File(target_name);
-		File			f1		= new File(get_file_absolute_path(target_name));
-		/* 2				*/
-		if (!f1.exists()) {
-			System.out.println("f1.toString()=" + f1.getName());
-			return null;
-		} else {
-			//debug
-			System.out.println(target_name + " exists: " + f1.toString());
-			System.exit(0);
-		}
-		/* 3				*/
-		String		s1		= get_file_absolute_path(target_name);
+		System.out.println("<enter: get_project_path()>");
 		
-		/* 4				*/
-		String[]		a1		= s1.split("\\");
+		String		file_name			= get_file_name();
+		String		file_path_abs	= get_file_absolute_path(file_name);
+//		String		package_name	= class_obj.getPackage().getName();
+		String		project_path;
 		
-		/* 5				*/
-//		if (get_index(a1, target_name))
+//		System.out.println("file_name=" + file_name);
+//		System.out.println("file_path_abs=" + file_path_abs);
 		
-		return null;
+		/* show project path		*/
+		project_path		= String.format("./%s/%s", package_name, target_name);
+//		System.out.println("project_path=" + project_path);
+		
+		/* return			*/
+		System.out.println("<exit: get_project_path()>");
+		return project_path;
+		
+//		return null;
 	}//public static String get_project_path
 	
 	public static int get_index(String[] sarray, String target) {
