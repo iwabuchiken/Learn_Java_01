@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><templates><template autoinsert="true" context="java" deleted="false" description="format: basics" enabled="true" name="f1">/* variables	*/&#13;
+${cursor}String		s1;&#13;
+int			n1;&#13;
+File			file;&#13;
+&#13;
+/* initialize		*/&#13;
+&#13;
+/* processes	*/&#13;
+&#13;
+/* return		*/&#13;
+</template></templates>

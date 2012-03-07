@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><templates><template autoinsert="true" context="methodbody_context" deleted="false" description="作成済みメソッド・スタブ中のコード" enabled="true" id="org.eclipse.jdt.ui.text.codetemplates.methodbody" name="methodbody">// ${todo} 自動生成されたメソッド・スタブ
+${body_statement}</template></templates>
