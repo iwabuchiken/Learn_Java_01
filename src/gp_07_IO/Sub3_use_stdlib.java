@@ -39,8 +39,8 @@ public class Sub3_use_stdlib {
 		System.out.println("file_name_absolute=" + file_name_absolute);
 		
 		/* project path				*/
-		project_path				= STDLIB.get_project_path("src", file_name);
-		System.out.println("project_path=" + project_path);
+//		project_path				= STDLIB.get_project_path("src", file_name);
+//		System.out.println("project_path=" + project_path);
 		
 		/* return		*/
 

@@ -90,6 +90,24 @@ public class STDLIB {
 		}//for (int i = 0; i < sarray.length; i++)
 		
 		return -1;
-	}
+	}//public static int get_index(String[] sarray, String target)
 
+	public static String substitute_chars(String target, char char_from, char char_to) {
+		/* variables			*/
+		String		temp;	/* temporary string		*/
+//		
+//		/* processes				*/
+//		temp		= target;
+//		
+//		for (int i = 0; i < temp.length(); i++) {
+////			System.out.println("temp.charAt(i)=" + temp.charAt(i));
+//			if (temp.charAt(i) == char_from) {
+//				temp.charAt(i) = char_to;
+//			}//if (temp[i] == char_from) 
+//		}//for (int i = 0; i < temp.length; i++)
+		
+		temp = target.replace(char_from, char_to);
+		
+		return temp;
+	}//public static String substitute_chars()
 }
