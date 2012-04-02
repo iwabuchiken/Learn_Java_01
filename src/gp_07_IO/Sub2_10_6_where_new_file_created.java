@@ -1,5 +1,5 @@
 /************************************
- * Sub1_10_6_getParentFile.java 
+ * Sub1_Sample_1_2.java 
  * Author: iwabuchiken 
  * Date: 2012/2012/03/07/8:24:32 
  * Aim: 
@@ -65,4 +65,4 @@ public class Sub2_10_6_where_new_file_created {
 	
 	
 
-}//Sub1_10_6_getParentFile
+}//Sub1_Sample_1_2
